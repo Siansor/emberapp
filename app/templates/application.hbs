@@ -1,8 +1,20 @@
-<ul>
-  <li>{{#link-to 'index'}} Home {{/link-to}}</li>
-  <li>{{#link-to 'about'}} About {{/link-to}}</li>
-  <li>{{#link-to 'services'}} Services {{/link-to}}</li>
-  <li>{{#link-to 'contact'}} Contact {{/link-to}}</li>
-</ul>
-
-{{outlet}}
+<div class="container">
+  <div class="menu">
+    {{#link-to 'index'}}
+      <h1 class="left">
+        <em>SuperRentals</em>
+      </h1>
+    {{/link-to}}
+    <div class="left links">
+      {{#link-to 'index'}} Home {{/link-to}}
+      {{#link-to 'about'}} About {{/link-to}}
+      {{#link-to 'services'}} Services {{/link-to}}
+      {{#link-to 'post'}} Posts {{/link-to}}
+      {{#link-to 'contact'}} Contact {{/link-to}}
+      {{#link-to 'rentals'}} Rentals {{/link-to}}
+    </div>
+  </div>
+  <div class="body">
+    {{outlet}}
+  </div>
+</div>

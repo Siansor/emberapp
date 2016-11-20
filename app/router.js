@@ -8,15 +8,17 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('about',    {path: 'about'});
-  this.route('services', {path: 'services'});
+  this.route('services');
   this.route('contact',  {path: 'contact'});
-
-  this.resource('posts', {path: '/posts'}, function(){
-    this.route('new');
-    // this.route('post', {path:':post_id'});
-  });
   this.route('events');
   this.route('post');
+  //
+  // this.resource('posts', {path: '/posts'}, function(){
+  //   this.route('new');
+  //   this.route('post', {path:':post_id'});
+  // });
+
+  this.route('rentals');
 });
 
 export default Router;
