@@ -7,8 +7,8 @@ export default Ember.Controller.extend({
   //  }
   // },
 
-  title: 'First name',
-  boby: 'Body',
+  title: 'New post',
+  boby: 'New Body',
   authors: ['Sasha', 'Rob'],
   comments: [
     {
